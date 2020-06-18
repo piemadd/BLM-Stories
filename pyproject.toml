@@ -1,0 +1,18 @@
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=0.12"]
+
+[tool]
+[tool.poetry]
+authors = ["Your Name <you@example.com>"]
+description = ""
+name = "blm-stories"
+version = "0.1.0"
+[tool.poetry.dependencies]
+flask = "^1.1"
+flask-restful = "^0.3.8"
+geocoder = "^1.38"
+python = "^3.8"
+folium = "^0.11.0"
+htmlmin = "^0.1.12"
+[tool.poetry.dev-dependencies]

@@ -1,0 +1,51 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+	<title>BLM Stories</title>
+</head>
+<body>	
+<form class="form-horizontal" action="/addloc">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Tell Your Story</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" placeholder="Name/Nickname" class="form-control input-md" required="">
+  <span class="help-block">Feel free to use a nick name or a fake name, as this will be posted publicly, and many want to keep their identities a secret.</span>  
+  </div>
+</div>
+<br>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="addy">Location</label>  
+  <div class="col-md-4">
+  <input id="addy" name="addy" type="text" placeholder="City" class="form-control input-md" required="">
+  <span class="help-block">Put the city/state you are from in this box. It will be used to plot the map.</span>  
+  </div>
+</div>
+<br>
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="message">Your Story</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="message" name="message"></textarea>
+  </div>
+  <span class="help-block">Tell your story about how you have helped the BLM Movement. Note, any Racist, Homophobic, Xenophobic, or generally offensive submissions will be removed. Go ahead, call your lawyer, I am not required to uphold your freedom of speech, and I can do whatever the fuck I want to do.</span>
+</div>
+<br>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <input type="submit" value="Submit">
+  </div>
+</div>
+</fieldset>
+</form>
+</body>
+</html>

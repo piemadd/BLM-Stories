@@ -1,0 +1,155 @@
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 05:15:31] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 11:39:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 11:39:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 11:39:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 11:39:35] "[37mGET /stories/list HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 12:00:21] "[37mGET /stories/list HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 12:02:00] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 12:02:06] "[37mGET /viewSubs HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 12:02:10] "[32mGET /stories/rand HTTP/1.1[0m" 302 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=33.9242688%2C+-84.3785379&format=jsonv2&addressdetails=1&limit=1
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 12:02:11] "[37mGET /stories/0 HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 12:07:51] "[37mGET /stories/list HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 12:08:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 12:08:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:22:18] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:32] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:33] "[37mGET /viewSubs HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:35] "[37mGET /stories/list HTTP/1.1[0m" 200 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=0.5090396%2C+34.5731341&format=jsonv2&addressdetails=1&limit=1
+ERROR:main:Exception on /stories/4 [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 92, in viewStory
+    location = g.city + ', ' + g.state + ', ' + g.country
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:36] "[35m[1mGET /stories/4 HTTP/1.1[0m" 500 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=33.7490987%2C+-84.3901849&format=jsonv2&addressdetails=1&limit=1
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:39] "[37mGET /stories/3 HTTP/1.1[0m" 200 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=33.7490987%2C+-84.3901849&format=jsonv2&addressdetails=1&limit=1
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:44] "[37mGET /stories/2 HTTP/1.1[0m" 200 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=33.9242688%2C+-84.3785379&format=jsonv2&addressdetails=1&limit=1
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:47] "[37mGET /stories/1 HTTP/1.1[0m" 200 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=0.5090396%2C+34.5731341&format=jsonv2&addressdetails=1&limit=1
+ERROR:main:Exception on /stories/0 [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 92, in viewStory
+    location = g.city + ', ' + g.state + ', ' + g.country
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:49] "[35m[1mGET /stories/0 HTTP/1.1[0m" 500 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=0.5090396%2C+34.5731341&format=jsonv2&addressdetails=1&limit=1
+ERROR:main:Exception on /stories/4 [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 92, in viewStory
+    location = g.city + ', ' + g.state + ', ' + g.country
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:53] "[35m[1mGET /stories/4 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:32:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:33:00] "[37mGET /viewSubs HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:33:01] "[37mGET /stories/list HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:33:02] "[37mGET /stories/list HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:33:42] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=0.5090396%2C+34.5731341&format=jsonv2&addressdetails=1&limit=1
+ERROR:main:Exception on /stories/4 [GET]
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 92, in viewStory
+    location = g.city + ', ' + g.state + ', ' + g.country
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:33:49] "[35m[1mGET /stories/4 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:35:19] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=0.5090396%2C+34.5731341&format=jsonv2&addressdetails=1&limit=1
+ERROR:main:Exception on /stories/4 [GET]
+Traceback (most recent call last):
+  File "main.py", line 93, in viewStory
+    location = g.city + ', ' + g.state + ', ' + g.country
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 95, in viewStory
+    location = 'Unknown Location. Manually overrided to ' + lat + ', ' + lon
+TypeError: can only concatenate str (not "float") to str
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:35:21] "[35m[1mGET /stories/4 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:35:55] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:geocoder.base:Requested https://nominatim.openstreetmap.org/search?q=0.5090396%2C+34.5731341&format=jsonv2&addressdetails=1&limit=1
+INFO:werkzeug:172.18.0.1 - - [05/Jun/2020 23:35:57] "[37mGET /stories/4 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
